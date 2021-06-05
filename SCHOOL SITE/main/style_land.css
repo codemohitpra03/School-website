@@ -1,0 +1,1125 @@
+/*PM~KS*/
+@font-face {
+    font-family: font-1;
+    src: url("src/font/font-1/font-1.woff2");
+}
+
+
+body{
+    font-family: font-1;
+    margin: 0;
+    width: auto;
+    background-image:url("src/head2_auto_x1.jpg");
+    background-repeat: no-repeat;
+}
+
+#bar{
+    background: rgb(255, 255, 255);
+    margin-left: 0;
+    height: 50px;
+    width: 2000px;
+}
+
+#logo img{
+    height: 40px;
+    padding-left: 5px;
+    padding-top: 4px;
+}
+
+.mbar{
+    display: inline-flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+    width: 600px;
+    left: 10px;
+    position: relative;
+}
+
+.mbar1{
+    display: inline-block;
+    flex-direction: row;
+    text-transform: uppercase;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+    width: 800px;
+    float: right;               
+    grid-template-columns: 120px 80px;
+    grid-column-gap: 20px;
+}
+
+
+nav{
+    position: fixed;
+    width: 1910px;
+    top: 0;
+
+}
+
+nav a{
+    z-index: 2;
+    text-decoration: none;
+    display: inline-block;
+
+}
+.home{
+    width: 70px;
+    margin-left: 15px;
+    z-index: 2;
+}
+
+.staff{
+    width: 100px;
+    z-index: 2;
+}
+
+.achivements{
+    width: 131px;
+    z-index: 2;
+}
+
+.academics{
+    width: 120px;
+    z-index: 2;
+}
+
+.more{
+    width: 70px;
+    z-index: 2;
+}
+
+
+
+.contact{
+    display: inline-block;    
+    width: 115px;
+    padding: 5px;
+    z-index: 2;
+    border:rgb(124, 124, 124) 2px solid;
+    border-radius: 100px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    height: 25px;
+    line-height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+ 
+   
+}
+
+.quick{
+    display: inline-block;
+    padding: 5px;
+    width: 140px;
+    border: rgb(124, 124, 124) 2px solid;
+    border-radius: 100px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    height: 25px;
+    line-height: 30px;
+    margin-left: 15px;
+    grid-column-start: 2;
+    margin-right: 110px;
+    cursor:pointer;  
+   
+    
+}
+
+
+.quick:hover{
+    background:  rgb(243, 216, 140);
+}
+
+.contact:hover{
+    background:  rgb(243, 216, 140);
+}
+
+div .right{
+    position: relative;
+    float: right;
+}
+
+
+
+div .quick{
+    transition:width 0.8s, height 0.8s linear 1s;
+
+}
+
+
+/*close btn*/
+
+#close{
+    display: inline;
+    position:absolute;
+    visibility: hidden;
+    top: 400px;
+    left: 1000px;
+    transition: left 0.72s linear 1.25s;
+
+}
+
+
+
+ /*div .quick:hover{
+    background:  rgb(3, 170, 3);
+    width: 500px;
+    height: 500px;
+    border-radius: 70px;
+    z-index: 2;
+    
+}
+*/
+
+
+/*=============FORM PART STYLE============================*/
+
+/* 
+.form{
+    display: block;
+    position: absolute;
+    padding: 10px;
+    right: 0px;
+    top: 50px;
+    width: 500px;
+} */
+
+
+.form{
+    display: inline;
+    visibility:hidden;
+    position: absolute;
+    padding: 10px;
+    left: 500px;
+    top: 50px;
+    width: 500px;
+}
+
+form{
+    transition: left 0.72s linear 1.25s;
+}
+
+p{
+    padding: 5px;
+}
+ 
+input{
+    margin-left: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+#emailtext,#nametext{
+    margin-left: 70px;
+}
+
+textarea{
+    margin-left: 150px;
+}
+
+#Message{
+    display: inline;
+    position: absolute;
+    top: 200px;
+    left: 85px;
+    
+}
+
+#name{
+    display: inline-block;
+    position: absolute;
+    background-color: rgba(245, 175, 45, 0.842);
+    width: 400px;
+    border: 1px solid gray;
+    padding: 1px;
+    border-radius: 20px;
+    left: 65px;
+    top: 10px;
+
+}
+
+
+#mail{
+    display: inline-block;
+    position: absolute;
+    background: rgba(245, 175, 45, 0.842);
+    width: 400px;
+    border: 1px solid gray;
+    padding: 1px;
+    top: 110px;
+    left: 65px;
+    border: 1px solid gray;
+    border-radius: 20px;
+
+}
+
+#pnum{
+    display: inline-block;
+    position: absolute;
+    background: rgba(245, 175, 45, 0.842);
+    width: 400px;
+    padding: 1px;
+    top: 210px;
+    left: 65px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+#Message{
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: 30px;
+}
+
+#msg{
+    display: inline-block;
+    position: absolute;
+    background: rgba(245, 175, 45, 0.842);
+    padding: 1px;
+    top: 310px;
+    left: 65px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 400px;
+}
+
+#submit{
+    display: inline-block;
+    position: absolute;
+    top: 570px;
+    left: 300px;
+}
+button{
+    font-family: font-1;
+    padding: 10px 20px;
+}
+
+
+
+
+/*================ANIMATION PART======================*/
+
+
+
+
+/* yellow color background shades (1). rgb(185, 139, 10)        (2). rgb(243, 216, 140)    */
+
+
+
+
+div .animation{
+    position: absolute;
+    height: 5px;
+    bottom: 14px;
+    z-index: 0;
+    left: 56px;
+    background: #ce821e96;
+    width: 70px;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+
+
+
+.home div:nth-child(1){
+    width: 70px;
+
+}
+
+ .home:hover~.animation, div:nth-child(1)~.animation>a:hover{
+
+    
+    left: 56px;
+}
+
+
+
+
+
+.staff div:nth-child(2){
+    width: 100px;
+}
+
+ .staff:hover~.animation, div:nth-child(2)~.animation>a:hover{    
+    left: 130px;
+    width: 85px;
+
+}
+
+
+
+
+
+.academics div:nth-child(3){
+    width: 100px;
+
+}
+
+ .academics:hover~.animation, div:nth-child(3)~.animation>a:hover{
+
+    
+    left: 225px;
+    width: 115px;
+}
+  
+
+
+
+.achivements div:nth-child(4){
+    width: 131px;
+}
+
+ .achivements:hover~.animation, div:nth-child(4)~.animation>a:hover{
+    left: 345px;
+    width: 131px;
+}
+  
+
+
+
+.more div:nth-child(5){
+    width: 70px;
+}
+
+ .more:hover~.animation, div:nth-child(5)~.animation>a:hover{
+    left: 477px;
+    width: 70px;
+}
+
+
+/*-----------------------------------------------------------section down the nav bar ------------------------------------------------------------------------------------------*/
+
+
+/*
+#################################################################################################################################################################################
+###################################################################################################################################################################################
+##################################################################################################################################################################################
+*/
+
+
+
+
+
+.schlname{
+    display: -ms-inline-grid;
+    position: absolute;
+    grid-template-rows: 2;
+    color: white;
+    margin-left: 400px;
+    margin-top: 200px;
+    font-size: 70px;
+    text-shadow: 0 0 10px #b12ce6d0, 0 0 10px #39e8ff;
+    z-index: -1;
+    font-weight: bolder;
+}
+
+.place{
+
+    display: grid;
+    position: absolute;
+    top: 300px;
+    color: white;
+    margin-left: 800px;
+    margin-top: 10px;
+    font-size: 50px;
+    text-shadow: 0 0 10px #b12ce6d0, 0 0 10px #39e8ff;
+    font-weight: 600;
+    z-index: -1;
+}
+
+
+.bgimg{
+    display: inline;
+    position: absolute;
+    top: 0;
+    background: image("src\head2_auto_x1.jpg");
+    
+    width: 3000px;
+    
+}
+
+
+
+/*-------------------news and events-----------------*/
+
+
+
+.news{
+    display: inline;
+    position: absolute;
+    top: 250px;
+    left: 425px;
+    width: 250px;
+    height: 70px;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.btn{
+    border: 1px solid #eb2121;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgb(243, 190, 91);
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 4px #b12ce6d0, 0 0 4px #39e8ff;
+    transition: 0.8s;
+} 
+
+
+.btn:hover{
+   
+    color: yellow;
+}
+
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rgb(123, 0, 238);
+    text-shadow: 2px 2px 4px #b12ce6d0, 0 0 4px #39e8ff;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.btn::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn:hover::before{
+    height: 180%;
+}
+
+
+ /* .btn{
+    background: rgb(243, 190, 91);
+    color: yellow;
+    border: 1px solid #eb2121;
+    overflow: hidden;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px #b12ce6d0, 0 0 4px #39e8ff;
+    transition: 0.8s;
+}
+
+
+
+.btn:hover{
+    color:rgba(231, 7, 7, 0.829);
+}
+
+.btn::before{
+    background: rgb(123, 0, 238);
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    text-shadow: 2px 2px 4px #b12ce6d0, 0 0 4px #39e8ff;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.btn::before{
+    bottom: 0;
+    border-radius:50% 50% 0 0;
+}
+
+.btn::before{
+    height: 180%;
+  }
+  
+
+.btn:hover::before{
+    height: 0%;
+}
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------DOWN THE SCHLL NAME----------------------------------------------------------------------*/
+
+
+
+
+/*=======================================================================PART-1==================================================================================*/
+
+/*
+#################################################################################################################################################################################
+###################################################################################################################################################################################
+##################################################################################################################################################################################
+*/
+
+.bgblock1{
+    display: inline-block;
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    background: rgb(240, 241, 243);
+    height: 900px;
+    width: 1900px;
+    top: 721px;
+    
+}
+section{
+    
+    position: absolute;
+    width: 1000px;
+    display: inline;
+    top: 400px;
+    z-index: -1;
+}
+section .welcome{
+    color: blueviolet;
+    font-weight: bolder;
+    font-size: 57px;
+    margin-left: 70px;
+    margin-top: 500px;
+    text-shadow: 2px 2px 10px rgb(146, 94, 196);
+    display: inline-block;
+}
+
+.intro1-1{
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    color: rgb(65, 65, 65);
+    font-weight: 200;    
+    top: 60px;
+    width: 950px;
+    margin-left: 70px;
+}
+
+
+.intro1-2{
+    display: inline-block;
+    position: relative;
+    margin-left: 70px;
+    margin-top: 53px;
+    font-size: 22px;
+    top: 40px;
+    width: 950px;
+    color: rgb(124, 124, 124);
+}
+
+.intro1-3{
+    display: inline-block;
+    position: relative;
+    margin-left: 70px;
+    margin-top: 53px;
+    font-size: 22px;
+    top: 40px;
+    width: 950px;
+    color: rgb(124, 124, 124);
+}
+
+
+.principal{
+    display: inline;
+    top: 400px;
+    position: absolute;
+}
+
+.principal img{
+    display: inline;
+    position:absolute;
+    left: 1300px;
+    top: 680px;
+    float: right;
+    height: 400px;
+    bottom: 110px;
+    border: 10px solid rgba(134, 121, 121, 0.521);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.role{
+    display: inline;
+    position: absolute;
+    margin-top: 10px;
+    float: right;
+    left: 1377px;
+    font-size: 37px;
+    width: 210px;
+    top: 590px;
+    font-weight: 600;
+    z-index:-1;
+}
+
+.name{
+    display: inline;
+    float: right;
+    position: absolute;
+    left: 1420px;
+    top: 1130px;
+    font-size: 20px;
+    font-weight: 200;
+    color: rgb(94, 94, 94);
+    text-shadow:2px 2px 2px lightgray;
+    width: 200px;
+	z-index:-1;
+}
+
+/*========================================================================PART-2================================================================================================*/
+
+/*
+#################################################################################################################################################################################
+###################################################################################################################################################################################
+##################################################################################################################################################################################
+*/
+
+.bgblock2{
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(235, 235, 235);
+    width: 1900px;
+    height: 800px;
+    top: 1620px;
+    z-index: -1;
+}
+
+.part2 .joseph img{
+    display: inline;
+    position: absolute;
+    height: 300px;
+    top: 1850px;
+    margin-left: 70px;
+    border: 10px solid rgb(166, 175, 169);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.joseph .role1{
+    display: inline;
+    position: absolute;
+    left: 190px;
+    top: 1790px;
+    font-weight: 500;
+    font-size: 37px;
+    color: rgb(92, 92, 92);
+    z-index: -1;
+}
+
+.joseph .name1{
+    display: inline;
+    position: absolute;
+    top: 2190px;
+    left: 210px;
+    font-size: 25px;
+    text-shadow: 5px 5px 5px rgb(65, 65, 65);
+    z-index: -1;
+}
+
+#part2{
+    display: inline-block;
+    position: absolute;
+    left: 750px;
+    width: 1000px;
+    top: 1700px;
+}
+
+.history{
+    font-size: 50px;
+    font-weight: 650;
+    color:#868a96;
+    text-shadow: 2px 2px 8px rgb(148, 148, 148);  
+}
+
+.intro2-1, .intro2-2, .intro2-3, .intro2-4, .intro2-5{
+    display: inline-block;
+    position: relative;
+}
+
+.intro2-1{
+    top: 60px;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.intro2-2{
+    top: 100px;
+    font-size: 22px;
+    color: rgb(97, 96, 96);
+}
+
+.intro2-3{
+    top: 100px;
+    font-size: 22px;
+    color: rgb(97, 96, 96);
+}
+
+.intro2-4{
+    top: 70px;
+    color: rgb(97, 96, 96);
+    font-size: 22px;
+}
+
+.intro2-5{
+    top: 80px;
+    color: rgb(66, 66, 66);
+    font-size: 27px;
+    font-weight: 900;
+}
+
+
+/*=============================================================================PART-3============================================================================================*/
+
+/*
+#################################################################################################################################################################################
+###################################################################################################################################################################################
+##################################################################################################################################################################################
+*/
+
+
+
+
+.bgblock3{
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(240, 241, 243);
+    width: 1900px;
+    height: 800px;
+    top: 2415px;
+    z-index: -1;
+
+}
+
+.campus img{
+    height: 400px;
+    display: inline;
+    position: absolute;
+    left: 1150px;
+    top: 2650px;
+    border: 10px solid rgb(141, 141, 141);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+
+#part3{
+    display: inline;
+    position: absolute;
+    margin-left: 70px;
+    width: 950px;
+    top: 2750px;
+}
+
+
+.heading{
+    display: inline;
+    position: absolute;
+    bottom: 450px;
+    font-size: 50px;
+    font-weight: 650;
+    color:#274bb6d7;
+    text-shadow: 2px 2px 8px rgb(124, 27, 156);  
+    margin-left: 0px;
+}
+
+
+.intro3-1, .intro3-2, .intro3-3{
+    display: inline-block;
+    position: relative;
+}
+
+.intro3-1{
+    font-size: 25px;
+    font-weight: 500;
+    bottom: 70px;
+}
+
+.intro3-2{
+    font-size: 18px;
+    bottom: 45px;
+    color: rgb(134, 131, 131);
+    font-weight: 400;
+}
+
+.intro3-3{
+    font-size: 18px;
+    color: rgb(134, 131, 131);
+    font-weight: 400;
+    bottom: 30px;
+}
+
+/*=====================================================================================PART-4======================================================================================*/
+
+/*
+#################################################################################################################################################################################
+###################################################################################################################################################################################
+##################################################################################################################################################################################
+*/
+
+.bgblock4{
+    display: inline;
+    position: absolute;
+    background-color: rgb(102, 102, 102);
+    height: 275px;
+    width: 1900px;
+    top: 3215px;
+    z-index: -1;
+}
+
+
+#part4{
+    display: inline-block;
+    position: absolute;
+    top: 3315px;
+    text-align: center;
+}
+
+.intro4-1{
+    display: inline-block;
+    position: absolute;
+    width: 1000px;
+    top: 0px;
+    left: 450px;
+    font-weight: 600;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
+}
+
+
+
+/*=====================================================================================PART-5======================================================================================*/
+
+/*
+#################################################################################################################################################################################
+###################################################################################################################################################################################
+##################################################################################################################################################################################
+*/
+
+.bgblock5{
+    display: inline;
+    position: absolute;
+    background-color: rgb(231, 231, 231);
+    height: 440px;
+    width: 1900px;
+    top: 3490px;
+    z-index: -1;
+}
+
+#part5{
+    display: inline-block;
+    position: absolute;
+    top: 3550px;
+    left: 70px;
+  
+}
+
+.intro5-1 .vision{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 600;
+    color: rgba(196, 19, 19, 0.863);
+    text-shadow: 2px 2px 5px blueviolet;
+}
+
+#vision{
+    font-size: 500;
+    font-size: 25px;
+}
+
+.intro5-2 .mission{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 600;
+    color: rgba(196, 19, 19, 0.863);
+    text-shadow: 2px 2px 5px blueviolet;
+}
+
+
+#mission{
+    font-size: 500;
+    font-size: 25px;
+}
+
+
+
+
+
+/*=====================================================================================FOOTER======================================================================================*/
+
+/*
+#################################################################################################################################################################################
+###################################################################################################################################################################################
+##################################################################################################################################################################################
+*/
+
+
+.bgfooterblock{
+    display: inline;
+    position: absolute;
+    background-color: rgb(214, 214, 214);
+    height: 180px;
+    width: 1900px;
+    top: 3930px;
+    z-index: -1;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~f1~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+ul li{
+    list-style: none;
+    display: inline;
+    position: absolute;
+    top: 3980px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+
+
+#f1 li:nth-child(1){
+
+    left: 780px;
+    width: 70px;
+  
+
+}
+
+#f1 a:nth-child(1):hover{
+    color: rgb(216, 76, 25);
+
+}
+
+
+
+
+
+
+#f1 li:nth-child(2){
+
+    left: 830px;
+    width: 100px;
+
+}
+
+#f1 a:nth-child(2):hover{
+
+    color: rgb(216, 76, 25);
+}
+
+
+
+
+
+#f1 li:nth-child(3){
+
+    left: 880px;
+    width: 165px;
+
+}
+
+#f1 a:nth-child(3):hover{
+
+ 
+    color: rgb(216, 76, 25);
+}
+
+
+
+
+
+
+#f1 li:nth-child(4){
+
+    left: 980px;
+    width: 200px;
+
+}
+
+#f1 a:nth-child(4):hover{
+
+    color: rgb(216, 76, 25);
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~f2~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.f2{
+    display: inline-block;
+    position: absolute;
+    top: 4050px;
+    width: 1610px;
+    font-size: 20px;
+    color: #868686;;
+}
+
+.s2{
+    display: inline;
+    position: relative;
+    float: right;
+}
+
+.s1{
+    margin-left: 70px;
+
+}
+
+
